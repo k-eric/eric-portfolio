@@ -179,6 +179,47 @@ summary:focus-visible {
   line-height: 1.8;
 }
 
+.availability-card {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 12px 14px;
+}
+
+.availability-card > i {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.availability-card > div {
+  min-width: 0;
+}
+
+.availability-card strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.availability-card p {
+  max-width: 390px;
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

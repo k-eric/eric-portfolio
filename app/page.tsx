@@ -9,11 +9,12 @@ const profile = {
   focus: "Full-stack web development",
   developmentStatus: "Building and learning",
   version: "01.0",
-  availability: null,
+  availability: "Open to opportunities",
+  availabilityDetails: "Available for software development roles and freelance projects.",
   email: "ekwendo5@gmail.com",
   github: "https://github.com/k-eric",
   linkedin: "https://www.linkedin.com/in/erickwendo67677/?isSelfProfile=true",
-  whatsapp: "+25415122917",
+  whatsapp: "25415122917",
 };
 
 const stackGroups = [
@@ -143,6 +144,13 @@ export default function Home() {
               I&apos;m moving from design and digital creation into full-stack software engineering,
               bringing a people-first perspective to the process of building useful things for the web.
             </p>
+            <div className="availability-card">
+              <i aria-hidden="true" />
+              <div>
+                <strong>{profile.availability}</strong>
+                <p>{profile.availabilityDetails}</p>
+              </div>
+            </div>
             <div className="hero-actions">
               <a className="button button--primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
               <a className="button button--quiet" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
@@ -301,8 +309,8 @@ export default function Home() {
               <li>
                 <span className="contact-option-label">WhatsApp</span>
                 <div className="contact-option-detail">
+                  <ExternalLink href={`https://wa.me/${profile.whatsapp}`}>Message on WhatsApp</ExternalLink>
                   <span className="contact-option-value">{profile.whatsapp}</span>
-                  <span className="contact-option-note">Number provided; link not verified</span>
                 </div>
               </li>
               <li>
