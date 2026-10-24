@@ -14,7 +14,8 @@ const profile = {
   email: "ekwendo5@gmail.com",
   github: "https://github.com/k-eric",
   linkedin: "https://www.linkedin.com/in/erickwendo67677/?isSelfProfile=true",
-  whatsapp: "25415122917",
+  whatsapp: "254715122917",
+  whatsappDisplay: "+254 715 122 917",
 };
 
 const stackGroups = [
@@ -310,7 +311,7 @@ export default function Home() {
                 <span className="contact-option-label">WhatsApp</span>
                 <div className="contact-option-detail">
                   <ExternalLink href={`https://wa.me/${profile.whatsapp}`}>Message on WhatsApp</ExternalLink>
-                  <span className="contact-option-value">{profile.whatsapp}</span>
+                  <span className="contact-option-value">{profile.whatsappDisplay}</span>
                 </div>
               </li>
               <li>
